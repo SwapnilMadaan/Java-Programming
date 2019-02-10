@@ -1,2 +1,2 @@
 
-# Some Practical Problems on Array
+# Some Practical Problems on Arrays
