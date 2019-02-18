@@ -22,10 +22,6 @@ Coud you solve it without converting the integer to a string?
 Revert half of the number
 Complexity Analysis
 
-# Time complexity : O(\log_{10}(n))O(log 
-10
-​	
- (n)). We divided the input by 10 for every iteration, so the time complexity is O(\log_{10}(n))O(log10
-​	(n))
+# Time complexity : O(\log_{10}(n))O(log 10​	(n)). We divided the input by 10 for every iteration, so the time complexity is O(\log_{10}(n))O(log10​	(n))
 
 # Space complexity : O(1)O(1).
