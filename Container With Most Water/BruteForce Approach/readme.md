@@ -2,7 +2,7 @@ Given n non-negative integers a1, a2, ..., an , where each represents a point at
 
 Note: You may not slant the container and n is at least 2.
 ** Example:
- !(github->small)(https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
+ ![github->small](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
   # Solution
  By Brute Force approach
  we'll find every possible combination and pick the maximum container
