@@ -1,0 +1,39 @@
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        if (nums.length < 3) {
+            return new ArrayList();
+        }
+        Arrays.sort(nums);
+        int target = 0;
+        List<List<Integer>> ans = new ArrayList();
+        for (int idx = 0; idx < nums.length; idx++) {
+            if (idx >= 1 && nums[idx] == nums[idx-1]){
+                continue;
+            }
+            int fix = target - nums[idx];
+            int l = idx + 1;
+            int r = nums.length - 1;
+            while(l < r) {
+                int currSum = nums[l] + nums[r];
+                if (currSum > fix) {
+                    r--;
+                }else if (currSum < fix) {
+                    l++;
+                }else {
+                    while(l < r && nums[l] == nums[l+1]){
+                        l++;
+                    }
+                    while(l < r && nums[r] == nums[r-1]){
+                        r--;
+                    }
+                    ans.add(Arrays.asList(nums[l], nums[r], nums[idx]));
+                    l++;
+                    r--;
+                }
+            }
+            
+
+        }
+        return ans;
+    }
+}
